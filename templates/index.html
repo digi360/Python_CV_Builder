@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!---CDN Links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/cvstyle.css') }}">
+
+  </head>
+
+  <body>
+    <header>
+    
+    <h1>  <img src="{{ url_for('static',filename='logo.jpg') }}" height="90" width="90"/>UMUZI CV BUILDER</h1>
+    </header><br>
+
+    <form id="cvBuilder" method="post">
+      <fieldset>
+        <h4>Personal Details</h4>
+        <label for="names"> Name(s) and Surname </label>
+        <input type="text" name="names" class="form-control" id="names" placeholder="Name and Surname">
+
+        <label for="dob">Date Of Birth</label>
+        <input type="text" name="Date Of Birth" class="form-control" id="dob" placeholder="DD/MM/YYYY">
+
+        <label for="email">Email</label>
+        <input type="text" name="email" class="form-control" id="email" placeholder="name@example.com">
+
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="082 123 4567">
+      </fieldset><br/>
+
+      <fieldset>
+        <h4>Introduction</h4>
+        <label for="bio">Bio <br>
+          <span class='whatThis'>A biography, or simply bio, is a detailed description of a your life. It involves more than just the basic facts like education, work, relationships, and more; it portrays your experience of these life events.</span></label>
+          <textarea class="form-control" name="bio" id="bio" rows="3" placeholder="Write a summary about yourself..."></textarea>
+        </fieldset><br/>
+
+        <fieldset>
+          <h4>Education</h4>
+            <label for="nameOfQualification">Name of Qualification</label>
+            <input type="text" name="nameOfQualification" class="form-control" id="nameOfQualification" placeholder=" ">
+            <label for="nameOfInstitution">Name of Institution</label>
+            <input type="text" name="nameOfInstitution" class="form-control" id="nameOfInstitution" placeholder=" ">
+            <label for="studyDuration">Duration</label>
+            <input type="text" name="studyDuration" class="form-control" id="studyDuration" placeholder="Jan 2018 - Jun 2018">
+        </fieldset><br/>
+
+        <fieldset>
+          <h4>Work Experience</h4>
+          <label for="jobTitle">Job Title</label>
+          <input type="text" name="jobTitle" class="form-control" id="jobTitle" placeholder=" ">
+          <label for="nameOfCompany">Company Name</label>
+          <input type="text" name="nameOfCompany" class="form-control" id="nameOfCompany" placeholder=" ">
+          <label for="workDuration">Duration</label>
+          <input type="text" name="workDuration" class="form-control" id="workDuration" placeholder="2000 - 2001 / Jan 2000 - Jun 2000">
+          <label for="jobDescription">Job Description</label>
+          <textarea class="form-control" name="jobDescription" id="jobDescription" rows="5" placeholder="Describe your duties..."></textarea>
+        </fieldset><br/>
+        
+        <fieldset>
+          <h4>Skills</h4>
+          <input type="text" class="form-control" name="skills1" id="skills1" placeholder=""><br>
+          <input type="text" class="form-control" name="skills2" id="skills2" placeholder=""><br>
+          <input type="text" class="form-control" name="skills3" id="skills3" placeholder=""><br>
+          <input type="text" class="form-control" name="skills4" id="skills4" placeholder=""><br>
+          <input type="text" class="form-control" name="skills5" id="skills5" placeholder=""><br>
+        </fieldset>
+
+        <div id="btn">
+          <input type="button" id="save_button" value="Save" />
+          <input type="button" id="view_button" value="View PDF" />
+          <input type="button" id="download_button" value="Download PDF" />
+        </div>
+
+      </form>
+
+      <div id="success">
+        <p><a href="" target="_blank" id="download">Download PDF</a></p>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+      <script  src="{{ url_for('static',filename='js/main.js') }}">  </script>
+    </body>
+
+</html>
+
+

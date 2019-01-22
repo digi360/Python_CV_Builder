@@ -1,0 +1,26 @@
+* {
+	font-family: 'Arial';
+}
+
+.contacts {
+	font-size: 12px;
+	text-align: right;
+}
+
+.name {
+	font-size: 18px;
+	text-align: center;
+}
+
+.heading {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.text12 {
+	font-size: 12px;
+}
+
+.text14 {
+	font-size: 14px;
+}

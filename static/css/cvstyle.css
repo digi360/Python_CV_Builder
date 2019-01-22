@@ -1,0 +1,93 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	box-sizing: border-box;
+	cursor: default;
+	outline: none;
+}
+body{
+	background:#F2F2F3;
+}
+header h1{
+	font-family: 'Anton';
+	font-size: 50px;
+	word-spacing: 15px;
+	letter-spacing: 5px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	color:white;
+	background-color: rgb(30,30,30);
+}
+
+fieldset{
+	
+	margin: 5% 0% 5%;
+}
+
+form{
+	
+	margin: 0 auto;
+	max-width: 70%;
+}
+
+h4{
+	font-weight: bold;
+	color: #6B6D75;
+}
+label{
+	font-size: 17px;
+	color:#757780;
+	margin-top:30px;
+
+}
+#btn{
+	padding-right: 20px;
+}
+textarea:focus, input[type="text"]:focus,textarea[type="text"]:focus,input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,  input[type="color"]:focus, .uneditable-input:focus, .form-control:focus {  
+	border-color: none;
+	box-shadow:none;
+	outline: none;
+	border:0.5px solid #ff9933;
+	background: #FAF4EE;
+   
+    color: black;
+    padding:5px;
+
+
+}
+	
+
+textarea, input[type="text"],textarea[type="text"],input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"],input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"],  input[type="color"], .uneditable-input, .form-control {  
+	
+	background:#F2F2F3;
+	
+}
+
+ 
+#btn input {
+	
+    width: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:rgb(30,30,30);
+    color: white;
+    padding:;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn input:hover{
+	background-color: #ffbf80;
+    color: #ff9933;
+}
+.whatThis{
+	font-size: 0.8em;
+	margin: 2% 0% 2%;
+	color: #81838B;
+}
+
+/* orange */
